@@ -10,6 +10,7 @@ PATTERN = r'<h3[^>]*data-testid="commit-group-title"[^>]*>\s*Commits on\s*([^<]+
 
     
 def raccolta_dati_utente():     
+
     nome_utente = input("Inserire il nome dell'utente da controllare: ")
     if not nome_utente:
         raise ValueError("Il nome utente non può essere vuoto")
@@ -23,6 +24,7 @@ def raccolta_dati_utente():
     return url
 
 def ottieni_html(url:str):
+
     try:
         response = get(url)
         
@@ -39,6 +41,7 @@ def ottieni_html(url:str):
         print(f"Data error: {e}")
 
 def check_commits(url:str):
+
     html = ottieni_html(url)
     match = re.search(PATTERN, html)
     if match:
@@ -86,6 +89,7 @@ def ottieni_lista_repo(nome_utente:str):
 
 
 def ottieni_lista_branches(nome_utente:str, nome_repo:str): 
+
     url_branch:str = f"{URL}/{nome_utente}/{nome_repo}/branches"
     print(url_branch)
     
@@ -127,25 +131,28 @@ def ottieni_lista_branches(nome_utente:str, nome_repo:str):
 
 
 def main():
+    
     print(f"{'*'*50}\nVedo i tuoi commit su GitHub🕵️\n{'*'*50}")
     scelta = input("Per controllare i commits devi conoscere il nome utente, se conosci anche quelli di repository e branch premi 's', se non li conosci premi 'x' e te li mostro🔮: ")
-    if scelta == 's':
-        u = raccolta_dati_utente()
-        print(u)
+    url_ottenuto = ''
+
+    if scelta == 's': #ottieni url_ottenuto dall'utente
+        url_ottenuto = raccolta_dati_utente()
+        print(url_ottenuto)
         risposta = input("Le informazioni nell'url sono corrette? Premi 's' se sono corrette altrimenti premi 'n': ")
-        if risposta == 's':
-            data = check_commits(u)
-            print("Data ultimo commit:", data)
-        else:
+        if risposta != 's':
             main()
+            return
             
-    else:
+    else: # ottieni url_ottenuto tramite le liste
         nome_utente = input("Inserisci il nome utente: ")
         nome_repo = ottieni_lista_repo(nome_utente)
         nome_branch = ottieni_lista_branches(nome_utente, nome_repo)
         url_ottenuto = f"{URL}/{nome_utente}/{nome_repo}/commits/{nome_branch}"
-        data_commit = check_commits(url_ottenuto)
-        print("Data ultimo commit: ", data_commit)
+
+    #da url_ottenuto, prendi il commit    
+    data_commit = check_commits(url_ottenuto)
+    print("Data ultimo commit: ", data_commit)
 
     
 
