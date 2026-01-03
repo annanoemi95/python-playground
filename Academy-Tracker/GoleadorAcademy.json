@@ -1,0 +1,41 @@
+{
+  "lista_corsi": [
+    "Python1",
+    "Web Design",
+    "Statistica"
+  ],
+  "partecipanti": [
+    "Mario Rossi",
+    "Matteo Bianchi",
+    "Lara Roma",
+    "Pino Costa"
+  ],
+  "punteggio": {
+    "Statistica": {
+      "Mario Rossi": [
+        8,
+        "2026-01-03_19-55-17"
+      ],
+      "Pino Costa": [
+        4,
+        "2026-01-03_19-57-08"
+      ]
+    },
+    "Python1": {
+      "Mario Rossi": [
+        0,
+        ""
+      ],
+      "Lara Roma": [
+        9,
+        "2026-01-03_19-56-09"
+      ]
+    },
+    "Web Design": {
+      "Matteo Bianchi": [
+        6,
+        "2026-01-03_19-56-44"
+      ]
+    }
+  }
+}
