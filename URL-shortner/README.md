@@ -35,7 +35,7 @@ pip install requests
 Esegui lo script:
 
 ```bash
-python main.py
+python shortner_url.py
 ```
 
 Si aprirà un menu interattivo:
@@ -107,8 +107,8 @@ Se l’API restituisce un errore specifico per alias, il programma stampa:
 
 Esempi consigliati:
 - `lab2026`
-- `genetica7`
-- `tools01`
+- `spot467`
+- `tools258`
 
 ---
 
