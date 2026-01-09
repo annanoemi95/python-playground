@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import sys
+
 import json
 import os
 import requests
@@ -189,16 +189,6 @@ def interactive_menu():
 def main():
     interactive_menu()
 
-    if len(sys.argv) == 1:
-        interactive_menu()
-    else:
-        db = load_db()
-        if args.shorten:
-            add_link(db, args.shorten, args.alias)
-        elif args.list:
-            list_links(db)
-        elif args.search:
-            search_links(db, args.search)
-
+    
 if __name__ == "__main__":
     main()
