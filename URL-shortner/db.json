@@ -1,0 +1,68 @@
+{
+    "links": [
+        {
+            "id": "c3dfec7d-ec85-4012-bc14-9ac0433265ad",
+            "original_url": "https://www.youtube.com/watch?v=qVdPh2cBTN0&list=RDqVdPh2cBTN0&start_radio=1",
+            "short_url": "https://is.gd/Eu3WJE",
+            "alias": "Eu3WJE",
+            "category": null,
+            "created_at": "2026-01-09T10:46:14.079952"
+        },
+        {
+            "id": "af104105-74d4-4593-9fce-7252e35b6e9a",
+            "original_url": "https://www.youtube.com/watch?v=qVdPh2cBTN0&list=RDqVdPh2cBTN0&start_radio=1",
+            "short_url": "https://is.gd/Eu3WJE",
+            "alias": "Eu3WJE",
+            "category": null,
+            "created_at": "2026-01-09T11:04:24.799727"
+        },
+        {
+            "id": "421bec5f-d1e8-4aa9-9e4e-dc103a83f834",
+            "original_url": "https://open.spotify.com/intl-it/",
+            "short_url": "https://is.gd/ALI22",
+            "alias": "ALI22",
+            "category": "music",
+            "created_at": "2026-01-09T11:39:40.818000"
+        },
+        {
+            "id": "259688d0-a246-42a6-837a-cf4cda7868a5",
+            "original_url": "https://open.spotify.com/intl-it/",
+            "short_url": "https://is.gd/gSYHUU",
+            "alias": "gSYHUU",
+            "category": "music",
+            "created_at": "2026-01-09T11:54:53.515862"
+        },
+        {
+            "id": "19524e3b-ce40-4988-9444-3123cc0c827e",
+            "original_url": "https://open.spotify.com/intl-it/",
+            "short_url": "https://is.gd/gSYHUU",
+            "alias": "gSYHUU",
+            "category": "musica indie",
+            "created_at": "2026-01-09T11:55:57.762280"
+        },
+        {
+            "id": "d37e58d0-c395-4c9b-ab79-bcdf26427366",
+            "original_url": "https://www.weroad.it/viaggi/tour-thailandia-bangkok-chiang-mai-phuket-krabi",
+            "short_url": "https://is.gd/WEROAD234",
+            "alias": "WEROAD234",
+            "category": "viaggi",
+            "created_at": "2026-01-09T12:03:39.091660"
+        },
+        {
+            "id": "4b83f027-8fc3-4430-b663-1db347d2722e",
+            "original_url": "https://open.spotify.com/intl-it/artist/4ZbsxiS90Pj1gLeDv3A9mN",
+            "short_url": "https://is.gd/SPOT234",
+            "alias": "SPOT234",
+            "category": "musica indie",
+            "created_at": "2026-01-09T12:04:57.149159"
+        }
+    ],
+    "categories": [
+        "lavoro",
+        "social",
+        "tools",
+        "music",
+        "musica indie",
+        "viaggi"
+    ]
+}
